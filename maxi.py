@@ -12,6 +12,4 @@ if __name__ == '__main__':
  argv = [] 
  argv[:] = [ int(x) for x in sys.argv[1:] ] 
  num1, num2 = argv[:2]
-# print(type(argv[1:]))
- print(maxi(num1, num2))
-# print(sys.argv[1:]) 
+ print( maxi(num1, num2) )
