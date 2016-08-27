@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-import sys
+import args
 
 def maxi(args1, args2=0):
  if args1 > args2:
@@ -9,7 +9,5 @@ def maxi(args1, args2=0):
   return args2
 
 if __name__ == '__main__':
- argv = [] 
- argv[:] = [ int(x) for x in sys.argv[1:] ] 
- num1, num2 = argv[:2]
+ num1, num2 = args.main()
  print( maxi(num1, num2) )
