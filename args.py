@@ -10,10 +10,11 @@ def main(args):
   d = {}
   for a in sys.argv[1:x]:
    d['{0}'.format(a)] = int(a)
-  return d
+  #print( d.values() )
+  return d.values()
 # argv[:] = [ int(x) for x in sys.argv[1:] ]
 # num1, num2 = argv[:2]
 # return num1, num2
 
 if __name__ == "__main__":
- main(0) 
+ main(0)
