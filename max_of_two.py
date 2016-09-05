@@ -11,6 +11,6 @@ def main(args1, args2=0):
 if __name__ == '__main__':
  if args.main(2) != None:
   num1, num2 = args.main(2)
-  print( main(num1, num2) )
+  print(main(num1, num2))  
  else:
   print("More than 2 values entered. Only need 2.")
