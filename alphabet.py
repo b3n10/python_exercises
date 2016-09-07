@@ -1,4 +1,4 @@
-#/usr/bin/python
+#!/usr/bin/python
 
 def main(s):
  x, y, new_word = 0, 0, ''
