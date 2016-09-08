@@ -4,7 +4,6 @@ def main(s):
  pL, nW, nL = '','', []
 
  for x in range(len(s)):
-  print('pL: ' + pL + ', s['+ str(x) + ']: ' + s[x] + ' = ' + nW)
   if pL == '':
    pL = s[x]
    nW = pL
@@ -23,7 +22,6 @@ def main(s):
  if nW != '':
   nL.append(nW)
  
- print(nL)
  print( max(nL, key=len) )
 
 if __name__ == "__main__":
