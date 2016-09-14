@@ -6,6 +6,9 @@ Created on Sep 12, 2016 at 5:09AM
 Author: Francis Ben Lleve
 '''
 def main():
+    """
+    Prints guessed number, accepts input as h 'high',l 'low', 'c' correct
+    """
     i, g, s, e = '', 50, 0, 100
 
     while i != 'c':
