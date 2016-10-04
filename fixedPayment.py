@@ -11,6 +11,12 @@ def main(balance, fixedMonthlyPayment, annualInterestRate, month):
     balance - the outstanding balance on the credit card
     annualInterestRate - annual interest rate as a decimal
     '''
+    '''
+    print(month)
+    print("payment is " + str(fixedMonthlyPayment))
+    print("balance is " + str(balance))
+    '''
+
     if month == 12:
         return balance
     else:
@@ -30,13 +36,14 @@ month = 0
 
 def loop():
     fixedPayment = 0
+    x = 0
 
-    while ( main(balance, fixedPayment, annualInterestRate, month) >= 0 ):
+    while ( x >= 0 ):
         fixedPayment = fixedPayment + 10
+        x = main(balance, fixedPayment, annualInterestRate, month) 
     
     return fixedPayment
 
 print("balance: " + str(balance) + "\n" + "annual interest rate: " + str(annualInterestRate))
 print("Lowest payment: " + str(loop()))
-
 
