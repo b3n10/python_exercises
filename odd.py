@@ -1,6 +1,10 @@
 #!/usr/bin/python
 
 def main(x, y, z):
+    '''
+    x, y, z should be odd numbers
+    returns largest odd, else print false statement
+    '''
     if x % 2 != 0 or y % 2 != 0 or z % 2 != 0:
         if x > y and x > z and x % 2 != 0:
             print("Largest odd is: " + str(x))
